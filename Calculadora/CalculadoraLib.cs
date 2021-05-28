@@ -14,5 +14,11 @@ namespace Calculadora
 
             return num1 + num2;
         }
+
+        public decimal Resta(decimal parOperando1, decimal parOperando2)
+        {
+            return parOperando1 - parOperando2;
+        }
+
     }
 }
