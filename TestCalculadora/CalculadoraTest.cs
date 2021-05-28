@@ -23,5 +23,18 @@ namespace TestCalculadora
 
         }
 
+        [Fact]
+        public void TestResta()
+        {
+            // arange
+            var Calculadora = new CalculadoraLib();
+
+            // act
+            var ResultadoSuma = Calculadora.Resta(2.23456m, 1.12345m);
+
+            // asert
+            Assert.Equal(1.11111m, ResultadoSuma);
+
+        }
     }
 }
