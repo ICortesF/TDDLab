@@ -6,9 +6,13 @@ namespace Calculadora
 {
     public class CalculadoraLib
     {
-        public decimal Suma(decimal parOperando1, decimal parOperando2)
+        public T Suma<T>(T parOperando1, T parOperando2)
+
         {
-            return parOperando1 + parOperando2;
+            dynamic num1 = parOperando1;
+            dynamic num2 = parOperando2;
+
+            return num1 + num2;
         }
     }
 }
