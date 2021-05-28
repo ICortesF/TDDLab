@@ -1,10 +1,27 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Xunit;
+using Calculadora;
 
 namespace TestCalculadora
 {
-    class CalculadoraTest
+
+    public class CalculadoraTest
     {
+        [Fact]
+        public void TestSuma()
+        {
+            // arange
+            var Calculadora = new CalculadoraLib();
+
+            // act
+            var ResultadoSuma = Calculadora.Suma(1.12345m, 2.23456m);
+
+            // asert
+            Assert.Equal(3.35801m, ResultadoSuma);
+
+        }
+
     }
 }
